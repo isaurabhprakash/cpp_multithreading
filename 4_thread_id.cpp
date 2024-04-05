@@ -15,4 +15,6 @@ int main ()
     std::cout<<"Thread id of {thr} thread : "<<thr.get_id ()<<"\n";
 
     thr.join ();
+
+    std::cout<<"Thread id of {thr} thread after joining : "<<thr.get_id ()<<"\n";
 }
