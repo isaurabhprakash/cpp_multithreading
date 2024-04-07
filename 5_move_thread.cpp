@@ -30,6 +30,7 @@ int main()
 
     std::cout << "Thread id of thr thread : " << thr.get_id() << "\n";
 
+    // Not writing std::move will throw compilation error
     func(std::move(thr));
 
     std::cout << "Thread id of thr after moving : " << thr.get_id() << "\n";
